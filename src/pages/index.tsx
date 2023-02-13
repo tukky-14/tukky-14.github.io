@@ -13,7 +13,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
-                <div className="w-full p-2 text-4xl fixed bg-gray-100">Tukky's Portfolio</div>
+                <div className="w-full p-2 text-4xl fixed bg-gray-100">Tukky Portfolio</div>
                 <img className="w-full h-[500px] object-cover pt-14" src="/images/top.jpg" alt="夜の月の画像" />
                 <div className='my-6'>
                     <h2 className='text-center text-2xl'>WORKS</h2>
