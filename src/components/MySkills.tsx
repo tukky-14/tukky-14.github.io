@@ -57,8 +57,8 @@ const MySkills = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
                 <div className="border h-72 p-2 bg-white">
                     <p className="text-center font-bold mb-2">フロントエンド</p>
-                    {frontEndSkills.map((skill: { name: string; icon: string }) => (
-                        <div className="flex mb-1">
+                    {frontEndSkills.map((skill: { name: string; icon: string }, index: number) => (
+                        <div className="flex mb-1" key={index}>
                             <img className="w-4 mr-1" src={`/skill-icons/${skill.icon}`} alt="" />
                             <p>{skill.name}</p>
                         </div>
@@ -66,8 +66,8 @@ const MySkills = () => {
                 </div>
                 <div className="border h-72 p-2 bg-white">
                     <p className="text-center font-bold mb-2">バックエンド</p>
-                    {backEndSkills.map((skill: { name: string; icon: string }) => (
-                        <div className="flex mb-1">
+                    {backEndSkills.map((skill: { name: string; icon: string }, index: number) => (
+                        <div className="flex mb-1" key={index}>
                             <img className="w-4 mr-1" src={`/skill-icons/${skill.icon}`} alt="" />
                             <p>{skill.name}</p>
                         </div>
@@ -75,8 +75,8 @@ const MySkills = () => {
                 </div>
                 <div className="border h-72 p-2 bg-white">
                     <p className="text-center font-bold mb-2">サーバ・インフラ</p>
-                    {serverSkills.map((skill: { name: string; icon: string }) => (
-                        <div className="flex mb-1">
+                    {serverSkills.map((skill: { name: string; icon: string }, index: number) => (
+                        <div className="flex mb-1" key={index}>
                             <img className="w-4 mr-1" src={`/skill-icons/${skill.icon}`} alt="" />
                             <p>{skill.name}</p>
                         </div>
@@ -84,8 +84,8 @@ const MySkills = () => {
                 </div>
                 <div className="border h-72 p-2 bg-white">
                     <p className="text-center font-bold mb-2">開発ツールなど</p>
-                    {devToolSkills.map((skill: { name: string; icon: string }) => (
-                        <div className="flex mb-1">
+                    {devToolSkills.map((skill: { name: string; icon: string }, index: number) => (
+                        <div className="flex mb-1" key={index}>
                             <img className="w-4 mr-1" src={`/skill-icons/${skill.icon}`} alt="" />
                             <p>{skill.name}</p>
                         </div>
@@ -93,8 +93,8 @@ const MySkills = () => {
                 </div>
                 <div className="border h-72 p-2 bg-white">
                     <p className="text-center font-bold mb-2">資格</p>
-                    {certifications.map((skill: { name: string; icon: string }) => (
-                        <div className="flex mb-1">
+                    {certifications.map((skill: { name: string; icon: string }, index: number) => (
+                        <div className="flex mb-1" key={index}>
                             <img className="w-4 mr-1" src={`/skill-icons/${skill.icon}`} alt="" />
                             <p>{skill.name}</p>
                         </div>
@@ -102,8 +102,8 @@ const MySkills = () => {
                 </div>
                 <div className="border h-72 p-2 bg-white">
                     <p className="text-center font-bold mb-2">ちょっとだけ</p>
-                    {littleSkills.map((skill: { name: string; icon: string }) => (
-                        <div className="flex mb-1">
+                    {littleSkills.map((skill: { name: string; icon: string }, index: number) => (
+                        <div className="flex mb-1" key={index}>
                             <img className="w-4 mr-1" src={`/skill-icons/${skill.icon}`} alt="" />
                             <p>{skill.name}</p>
                         </div>
