@@ -1,6 +1,6 @@
 import CommonHead from '@/components/CommonHead';
 import Header from '@/components/Header';
-import Aboutme from '@/components/Aboutme';
+import Aboutme from '@/components/AboutMe';
 import Works from '@/components/Works';
 import MySkills from '@/components/MySkills';
 import Links from '@/components/Links';
