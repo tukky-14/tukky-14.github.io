@@ -1,6 +1,6 @@
 const Aboutme = () => {
     return (
-        <div className="mt-6 mb-40">
+        <div className="mt-6 mb-40" id="about_me">
             <h2 className="text-center text-2xl mb-8 m-auto font-bold border-b-4 w-1/2 border-blue-500">ABOUT ME</h2>
             <div className="sm:flex justify-center gap-4">
                 <img className="m-auto sm:m-0 block w-40 rounded-full" src="/images/tukky.jpg" alt="つっきーのアイコン画像" />

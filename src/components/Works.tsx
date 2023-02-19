@@ -1,6 +1,6 @@
 const Works = () => {
     return (
-        <div className="mb-40">
+        <div className="mb-40" id="works">
             <h2 className="text-center text-2xl mb-8 m-auto font-bold border-b-4 w-1/2 border-blue-500">WORKS</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
                 <a
