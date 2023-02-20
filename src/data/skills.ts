@@ -13,7 +13,6 @@ export const backEndSkills = [
     { name: 'Node.js', icon: 'nodejs.svg' },
     { name: 'Ruby', icon: 'ruby.svg' },
     { name: 'Cache / IRIS', icon: 'iris.svg' },
-    { name: 'MySQL', icon: 'mysql.svg' },
     { name: 'AWS Lambda', icon: 'lambda.svg' },
     { name: 'AWS DynamoDB', icon: 'dynamodb.svg' },
 ];
@@ -49,4 +48,5 @@ export const littleSkills = [
     { name: 'Firebase', icon: 'firebase.svg' },
     { name: 'Figma', icon: 'figma.svg' },
     { name: 'Google Apps Script', icon: 'gas.svg' },
+    { name: 'MySQL', icon: 'mysql.svg' },
 ];
