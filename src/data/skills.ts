@@ -13,6 +13,7 @@ export const backEndSkills = [
     { name: 'Node.js', icon: 'nodejs.svg', link: 'https://nodejs.org/ja/' },
     { name: 'Ruby', icon: 'ruby.svg', link: 'https://www.ruby-lang.org/ja/' },
     { name: 'Cache / IRIS', icon: 'iris.svg', link: 'https://www.intersystems.com/jp/data-platform/' },
+    { name: 'MySQL', icon: 'mysql.svg', link: 'https://www.mysql.com/jp/' },
     { name: 'AWS Lambda', icon: 'lambda.svg', link: 'https://aws.amazon.com/jp/lambda/' },
     { name: 'AWS DynamoDB', icon: 'dynamodb.svg', link: 'https://aws.amazon.com/jp/dynamodb/' },
 ];
@@ -48,5 +49,5 @@ export const littleSkills = [
     { name: 'Firebase', icon: 'firebase.svg', link: 'https://firebase.google.com/?hl=ja' },
     { name: 'Figma', icon: 'figma.svg', link: 'https://www.figma.com/ja/' },
     { name: 'Google Apps Script', icon: 'gas.svg', link: 'https://workspace.google.co.jp/intl/ja/products/apps-script/' },
-    { name: 'MySQL', icon: 'mysql.svg', link: 'https://www.mysql.com/jp/' },
+    { name: 'Astro', icon: 'astro.svg', link: 'https://astro.build/' },
 ];
