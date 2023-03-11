@@ -44,6 +44,19 @@ const Works = () => {
                         <p>使用技術：Next.js / TypeScript / MUI / Vercel / AWS Rekognition / AWS Lambda / Node.jsなど</p>
                     </div>
                 </a>
+                <a
+                    className="border h-[400px] p-2 rounded bg-white hover:scale-110 duration-200"
+                    href="https://dev-links.pages.dev/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <p className="text-center mb-2 font-bold">Dev Links</p>
+                    <img src="/images/dev-links.png" alt="DevLinksの画像" />
+                    <div className="text-sm my-2 flex flex-col gap-1">
+                        <p>開発のための学習サービスやツールなどをまとめたサイトです。随時更新しています。</p>
+                        <p>使用技術：Astro / React / TypeScript / Node.js</p>
+                    </div>
+                </a>
             </div>
         </div>
     );
