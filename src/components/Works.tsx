@@ -1,62 +1,55 @@
+const worksArray = [
+    {
+        url: 'https://www.printempskyoto.com/',
+        title: '半年に一度の食事会',
+        img: '/images/printempskyoto.png',
+        description: '友人が開催している食事会を紹介するために作成したWebサイトです。',
+        tech: 'Next.js / TypeScript / MUI / AWS S3 / AWS CodePipline',
+    },
+    {
+        url: 'https://tukkynote.com/',
+        title: 'Tukky Note',
+        img: '/images/tukkynote.png',
+        description: '自身のブログサイトです。エンジニア技術の備忘記事、謎解きのレビュー記事などを投稿しています。',
+        tech: 'WordPress / AWS Lightsail',
+    },
+    {
+        url: 'https://tukky-lab.vercel.app/',
+        title: 'Tukky Lab',
+        img: '/images/tukky-lab.png',
+        description: '使ってみたい技術ややってみたいことの実験場として作成したサイトです。いろんなAPIを試し実装したりしています。',
+        tech: 'Next.js / TypeScript / MUI / Vercel / AWS Rekognition / AWS Lambda / Node.js etc...',
+    },
+    {
+        url: 'https://dev-links.pages.dev/',
+        title: 'Dev Links',
+        img: '/images/dev-links.png',
+        description: '開発のための学習サービスやツールなどをまとめたサイトです。随時更新しています。',
+        tech: '使用技術：Astro / React / TypeScript / Node.js',
+    },
+];
+
 const Works = () => {
     return (
         <div className="mb-40 pt-10" id="works">
             <h2 className="text-center text-2xl mb-8 m-auto font-bold border-b-4 w-1/2 border-blue-500">WORKS</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
-                <a
-                    className="border h-[400px] p-2 rounded bg-white hover:scale-110 duration-200"
-                    href="https://www.printempskyoto.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <p className="text-center mb-2 font-bold">半年に一度の食事会</p>
-                    <img src="/images/printempskyoto.png" alt="半年に一度の食事会HPの画像" />
-                    <div className="text-sm my-2 flex flex-col gap-1">
-                        <p>友人が開催している食事会を紹介するために作成したWebサイトです。</p>
-                        <p>使用技術：Next.js / TypeScript / MUI / AWS S3 / AWS CodePipline</p>
-                    </div>
-                </a>
-                <a
-                    className="border h-[400px] p-2 rounded bg-white hover:scale-110 duration-200"
-                    href="https://tukkynote.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <p className="text-center mb-2 font-bold">Tukky Note</p>
-                    <img src="/images/tukkynote.png" alt="tukkynoteHPの画像" />
-                    <div className="text-sm my-2 flex flex-col gap-1">
-                        <p>自身のブログサイトです。エンジニア技術の備忘記事、謎解きのレビュー記事などを投稿しています。</p>
-                        <p>使用技術：WordPress / AWS Lightsail</p>
-                    </div>
-                </a>
-                <a
-                    className="border h-[400px] p-2 rounded bg-white hover:scale-110 duration-200"
-                    href="https://tukky-lab.vercel.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <p className="text-center mb-2 font-bold">Tukky Lab</p>
-                    <img src="/images/tukky-lab.png" alt="TukkyLabHPの画像" />
-                    <div className="text-sm my-2 flex flex-col gap-1">
-                        <p>
-                            使ってみたい技術ややってみたいことの実験場として作成したサイトです。いろんなAPIを試し実装したりしています。
-                        </p>
-                        <p>使用技術：Next.js / TypeScript / MUI / Vercel / AWS Rekognition / AWS Lambda / Node.jsなど</p>
-                    </div>
-                </a>
-                <a
-                    className="border h-[400px] p-2 rounded bg-white hover:scale-110 duration-200"
-                    href="https://dev-links.pages.dev/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-                    <p className="text-center mb-2 font-bold">Dev Links</p>
-                    <img src="/images/dev-links.png" alt="DevLinksの画像" />
-                    <div className="text-sm my-2 flex flex-col gap-1">
-                        <p>開発のための学習サービスやツールなどをまとめたサイトです。随時更新しています。</p>
-                        <p>使用技術：Astro / React / TypeScript / Node.js</p>
-                    </div>
-                </a>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                {worksArray.map((work, index) => (
+                    <a
+                        className="h-[368px] sm:h-[420px] border border-gray-200 rounded bg-white hover:scale-110 duration-200"
+                        href={work.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        key={index}
+                    >
+                        <p className="text-center mb-2 pt-2 pb-1 px-4 font-bold">{work.title}</p>
+                        <img className="border-b border-blue-200" src={work.img} alt={`${work.title}の画像`} />
+                        <div className="text-sm my-2 px-4 flex flex-col gap-1">
+                            <p>{work.description}</p>
+                            <p>使用技術：{work.tech}</p>
+                        </div>
+                    </a>
+                ))}
             </div>
         </div>
     );
