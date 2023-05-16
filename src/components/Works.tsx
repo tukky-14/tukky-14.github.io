@@ -4,7 +4,7 @@ const worksArray = [
         title: '半年に一度の食事会',
         img: '/images/printempskyoto.png',
         description: '友人が開催している食事会を紹介するために作成したWebサイトです。',
-        tech: 'Next.js / TypeScript / MUI / AWS S3 / AWS CodePipline',
+        tech: 'Next.js / TypeScript / MUI / S3 / CLoudFront / CodePipline',
     },
     {
         url: 'https://tukkynote.com/',
@@ -25,7 +25,14 @@ const worksArray = [
         title: 'Dev Links',
         img: '/images/dev-links.png',
         description: '開発のための学習サービスやツールなどをまとめたサイトです。随時更新しています。',
-        tech: '使用技術：Astro / React / TypeScript / Node.js',
+        tech: '使用技術：Astro / React / TypeScript / Node.js / Cloudflare Pages',
+    },
+    {
+        url: 'https://tukkytech.com/',
+        title: 'Tukky Tech Blog',
+        img: '/images/tukkytech.png',
+        description: '2つ目に作成した自身のブログサイトです。UIを1から自分で作成してみたかったため作成し直しました。',
+        tech: '使用技術：Next.js / TypeScript / microCMS / S3 / CloudFront',
     },
 ];
 
