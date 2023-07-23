@@ -5,9 +5,8 @@ const Aboutme = () => {
             <div className="sm:flex justify-center gap-4">
                 <img className="m-auto sm:m-0 block w-40 rounded-full" src="/images/tukky.jpg" alt="つっきーのアイコン画像" />
                 <p className="w-full sm:w-2/5 mt-4 sm:mt-0">
-                    京都府の田舎出身、現大阪住まいのITエンジニアTukkyです。音響機器メーカー購買職 →
-                    PC・スマホのコールセンターを経験したのち、30歳でITエンジニア業界に転職しました。
-                    AWSを使用したシステムの構築・運用、フロントエンド・バックエンド含めたWebアプリケーション作成などの業務を行っています。
+                    京都府の田舎出身で、現在は大阪に住んでいるITエンジニアの「つっきー」と申します。30歳の時にITエンジニア業界に転職しました。
+                    主にAWSを使用したシステムの構築・運用や、フロントエンド・バックエンドを含むWebアプリケーションの開発などを行っています。{' '}
                 </p>
             </div>
         </div>
