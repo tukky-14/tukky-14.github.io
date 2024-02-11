@@ -58,7 +58,7 @@ const Works = () => {
                         rel="noreferrer"
                         key={index}
                     >
-                        <p className="text-center mb-2 pt-2 pb-1 px-4 font-bold">{work.title}</p>
+                        <p className="text-center mb-2 pt-2 pb-1 px-4 bg-blue-600 text-white font-bold">{work.title}</p>
                         <img className="border-b border-blue-200" src={work.img} alt={`${work.title}の画像`} />
                         <div className="text-sm my-2 px-4 flex flex-col gap-1">
                             <p>{work.description}</p>

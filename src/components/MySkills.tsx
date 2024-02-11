@@ -22,7 +22,7 @@ const MySkills = () => {
                             {array.skills.map((skill: { name: string; icon: string; link: string }, index: number) => (
                                 <Link
                                     href={skill.link}
-                                    className="flex mb-1 hover:bg-blue-100 duration-200"
+                                    className="flex py-0.5 hover:bg-blue-100 duration-200"
                                     target="_blank"
                                     rel="noreferrer"
                                     key={index}

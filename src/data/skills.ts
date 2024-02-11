@@ -3,7 +3,7 @@ export const frontEndSkills = [
     { name: 'CSS', icon: 'css.svg', link: 'https://developer.mozilla.org/ja/docs/Web/CSS' },
     { name: 'JavaScript', icon: 'javascript.svg', link: 'https://developer.mozilla.org/ja/docs/Web/JavaScript' },
     { name: 'TypeScript', icon: 'typescript.svg', link: 'https://www.typescriptlang.org/' },
-    { name: 'React', icon: 'react.svg', link: 'https://ja.reactjs.org/' },
+    { name: 'React', icon: 'react.svg', link: 'https://ja.react.dev/' },
     { name: 'Next.js', icon: 'nextjs.svg', link: 'https://nextjs.org/' },
     { name: 'TailwindCSS', icon: 'tailwindcss.svg', link: 'https://v2.tailwindcss.com/' },
     { name: 'MUI(旧Material UI)', icon: 'mui.svg', link: 'https://mui.com/' },
