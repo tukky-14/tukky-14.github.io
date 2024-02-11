@@ -1,4 +1,5 @@
 import { backEndSkills, certifications, devToolSkills, frontEndSkills, littleSkills, serverSkills } from '@/data/skills';
+import Link from 'next/link';
 
 const MySkills = () => {
     const skillsArray = [
@@ -19,7 +20,7 @@ const MySkills = () => {
                         <div className="border h-72 p-2 bg-white" key={index}>
                             <p className="text-center font-bold mb-2">{array.title}</p>
                             {array.skills.map((skill: { name: string; icon: string; link: string }, index: number) => (
-                                <a
+                                <Link
                                     href={skill.link}
                                     className="flex mb-1 hover:bg-blue-100 duration-200"
                                     target="_blank"
@@ -32,7 +33,7 @@ const MySkills = () => {
                                         alt={`${array.title}のアイコン画像`}
                                     />
                                     <p>{skill.name}</p>
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     )

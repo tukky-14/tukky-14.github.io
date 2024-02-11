@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const worksArray = [
     {
         url: 'https://www.printempskyoto.com/',
@@ -42,7 +44,7 @@ const Works = () => {
             <h2 className="text-center text-2xl mb-8 m-auto font-bold border-b-4 w-1/2 border-blue-500">WORKS</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {worksArray.map((work, index) => (
-                    <a
+                    <Link
                         className="h-[368px] sm:h-[420px] border border-gray-200 rounded bg-white hover:scale-110 duration-200"
                         href={work.url}
                         target="_blank"
@@ -55,7 +57,7 @@ const Works = () => {
                             <p>{work.description}</p>
                             <p>使用技術：{work.tech}</p>
                         </div>
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>
