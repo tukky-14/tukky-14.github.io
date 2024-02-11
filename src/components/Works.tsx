@@ -19,7 +19,7 @@ const worksArray = [
         url: 'https://tukky-lab.vercel.app/',
         title: 'Tukky Lab',
         img: '/images/tukky-lab.png',
-        description: '使ってみたい技術ややってみたいことの実験場として作成したサイトです。いろんなAPIを試し実装したりしています。',
+        description: '使ってみたい技術ややってみたいことの実験場として作成したサイトです。',
         tech: 'Next.js / TypeScript / MUI / Vercel / AWS Rekognition / AWS Lambda / Node.js etc...',
     },
     {
@@ -52,7 +52,7 @@ const Works = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {worksArray.map((work, index) => (
                     <Link
-                        className="h-[368px] sm:h-[420px] border border-gray-200 rounded bg-white hover:scale-105 duration-300"
+                        className="h-[400px] sm:h-[450px] border border-gray-200 rounded bg-white hover:scale-105 duration-300"
                         href={work.url}
                         target="_blank"
                         rel="noreferrer"
