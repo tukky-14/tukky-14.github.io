@@ -36,6 +36,13 @@ const worksArray = [
         description: '2つ目に作成した自身のブログサイトです。UIを1から自分で作成してみたかったため作成し直しました。',
         tech: '使用技術：Next.js / TypeScript / microCMS / S3 / CloudFront',
     },
+    {
+        url: 'https://life-hub-links.vercel.app/',
+        title: 'Life Hub Links',
+        img: '/images/life-hub-links.png',
+        description: '生活のためのサービスやツールなどをまとめたサイトです。随時更新しています。',
+        tech: '使用技術：Next.js / TypeScript',
+    },
 ];
 
 const Works = () => {
@@ -45,7 +52,7 @@ const Works = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {worksArray.map((work, index) => (
                     <Link
-                        className="h-[368px] sm:h-[420px] border border-gray-200 rounded bg-white hover:scale-110 duration-200"
+                        className="h-[368px] sm:h-[420px] border border-gray-200 rounded bg-white hover:scale-105 duration-300"
                         href={work.url}
                         target="_blank"
                         rel="noreferrer"
