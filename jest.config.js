@@ -10,6 +10,7 @@ const createJestConfig = nextJest({
 // Jest のカスタム設定をここに書く
 const customJestConfig = {
     testEnvironment: 'jest-environment-jsdom',
+    testMatch: ['**/__tests__/**/*.test.[jt]s?(x)'],
     // TypeScript + JSX を扱うために transform を設定
     transform: {
         '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
