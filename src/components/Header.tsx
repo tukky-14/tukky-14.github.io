@@ -1,14 +1,9 @@
+import { menus } from '@/data/menus';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Drawer } from '@mui/material';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-
-const menuList = [
-    { name: 'ABOUT ME', link: 'about_me' },
-    { name: 'WORKS', link: 'works' },
-    { name: 'MY SKILLS', link: 'my_skills' },
-];
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -22,7 +17,7 @@ const Header = () => {
             <img className="sm:hidden w-full h-[500px] object-cover" src="/images/top-sm.jpg" alt="夜の月の画像" />
             <img className="hidden sm:block w-full h-[500px] object-cover" src="/images/top.jpg" alt="夜の月の画像" />
             <ul className="hidden sm:flex gap-4 absolute top-2 right-6 text-white">
-                {menuList.map((menu: { name: string; link: string }, index: number) => (
+                {menus.map((menu: { name: string; link: string }, index: number) => (
                     <Link to={menu.link} smooth={true} duration={500} key={index}>
                         <li className="border-b border-transparent hover:border-blue-800 hover:cursor-pointer duration-300">
                             {menu.name}
@@ -35,7 +30,7 @@ const Header = () => {
             </button>
             <Drawer anchor="right" open={open} onClose={() => setOpen(false)}>
                 <div className="px-8 pt-16 flex flex-col gap-4 h-full bg-gray-600 text-white">
-                    {menuList.map((menu: { name: string; link: string }, index: number) => (
+                    {menus.map((menu: { name: string; link: string }, index: number) => (
                         <Link to={menu.link} smooth={true} duration={500} key={index}>
                             <li className="list-none border-b border-transparent hover:cursor-pointer duration-300">{menu.name}</li>
                         </Link>
