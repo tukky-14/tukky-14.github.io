@@ -4,7 +4,7 @@ export const works = [
         title: '半年に一度の食事会',
         img: '/images/printempskyoto.png',
         description: '友人が開催している食事会を紹介するために作成したWebサイトです。',
-        tech: 'Next.js / TypeScript / MUI / S3 / CLoudFront / CodePipline',
+        tech: 'Next.js / TypeScript / MUI / S3 / CloudFront / CodePipline',
     },
     {
         url: 'https://tukkynote.com/',

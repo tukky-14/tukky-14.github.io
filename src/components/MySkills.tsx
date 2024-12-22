@@ -16,8 +16,9 @@ const MySkills = () => {
                                 target="_blank"
                                 rel="noreferrer"
                                 key={index}
+                                data-testid={skill.name}
                             >
-                                <img className="w-4 mr-1" src={`/skill-icons/${skill.icon}`} alt={`${array.title}のアイコン画像`} />
+                                <img className="w-4 mr-1" src={`/skill-icons/${skill.icon}`} alt={`${skill.name}のアイコン画像`} />
                                 <p>{skill.name}</p>
                             </Link>
                         ))}
