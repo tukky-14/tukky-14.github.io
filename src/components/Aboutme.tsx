@@ -1,4 +1,4 @@
-import { calcYearMontDay } from '@/libs/calc';
+import { calcYearMonthDay } from '@/libs/calc';
 import { Popover, Typography } from '@mui/material';
 import { useState } from 'react';
 
@@ -12,7 +12,7 @@ const Aboutme = () => {
      */
     const handleImageClick = (event: React.MouseEvent<HTMLElement>) => {
         // エンジニアになってからの日付を計算
-        const { year, month, day } = calcYearMontDay(new Date('2020-09-23'));
+        const { year, month, day } = calcYearMonthDay(new Date('2020-09-23'));
         setPopoverText(`エンジニアになってから${year}年${month}ヶ月${day}日が経過しました。`);
         setAnchorEl(event.currentTarget);
     };
