@@ -1,25 +1,25 @@
 export const works = [
-    {
-        url: 'https://www.printempskyoto.com/',
-        title: '半年に一度の食事会',
-        img: '/images/printempskyoto.png',
-        description: '友人が開催している食事会を紹介するために作成したWebサイトです。',
-        tech: 'Next.js / TypeScript / MUI / S3 / CloudFront / CodePipline',
-    },
-    {
-        url: 'https://tukkynote.com/',
-        title: 'Tukky Note',
-        img: '/images/tukkynote.png',
-        description: '自身のブログサイトです。エンジニア技術の備忘記事、謎解きのレビュー記事などを投稿しています。',
-        tech: 'WordPress / AWS Lightsail',
-    },
-    {
-        url: 'https://tukky-lab.vercel.app/',
-        title: 'Tukky Lab',
-        img: '/images/tukky-lab.png',
-        description: '使ってみたい技術ややってみたいことの実験場として作成したサイトです。',
-        tech: 'Next.js / TypeScript / MUI / Vercel / AWS Rekognition / AWS Lambda / Node.js etc...',
-    },
+    // {
+    //     url: 'https://www.printempskyoto.com/',
+    //     title: '半年に一度の食事会',
+    //     img: '/images/printempskyoto.png',
+    //     description: '友人が開催している食事会を紹介するために作成したWebサイトです。',
+    //     tech: 'Next.js / TypeScript / MUI / S3 / CloudFront / CodePipline',
+    // },
+    // {
+    //     url: 'https://tukkynote.com/',
+    //     title: 'Tukky Note',
+    //     img: '/images/tukkynote.png',
+    //     description: '自身のブログサイトです。エンジニア技術の備忘記事、謎解きのレビュー記事などを投稿しています。',
+    //     tech: 'WordPress / AWS Lightsail',
+    // },
+    // {
+    //     url: 'https://tukky-lab.vercel.app/',
+    //     title: 'Tukky Lab',
+    //     img: '/images/tukky-lab.png',
+    //     description: '使ってみたい技術ややってみたいことの実験場として作成したサイトです。',
+    //     tech: 'Next.js / TypeScript / MUI / Vercel / AWS Rekognition / AWS Lambda / Node.js etc...',
+    // },
     {
         url: 'https://dev-links.pages.dev/',
         title: 'Dev Links',
